@@ -1,0 +1,46 @@
+.navbar {
+  width: 250px;
+  min-height: 100vh;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo h3 {
+  color: #635bff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.nav-list li:hover {
+  background: #f3f4f6;
+}
+
+.nav-list li.active {
+  background: #635bff;
+  color: white;
+}
+
+.nav-list li span {
+  font-size: 18px;
+}
