@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <ul className="nav-list">
-        <NavLink className="nav-text" to={"/Dashboard"}>
+        <NavLink className="nav-text" to={"/dashboard"}>
           <li className="activee">
             <svg
               className="nav-icon"

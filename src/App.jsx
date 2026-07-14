@@ -14,6 +14,7 @@ function App() {
         <main className="content-area">
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/products" element={<Products/>}/>
             <Route path="*" element={<Dashboard />} />
           </Routes>
