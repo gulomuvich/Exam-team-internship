@@ -47,10 +47,10 @@
   transition: stroke 0.2s ease;
 }
 
-.nav-icon>a.active{
-  background: yellow;
-}
-
 .nav-text {
   letter-spacing: -0.2px;
+}
+.nav-list>a.active li{
+  background: #1E5EFF;
+  color: white;
 }
