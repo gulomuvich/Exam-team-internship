@@ -1,0 +1,95 @@
+.dashboard-view {
+  width: 100%;
+}
+
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a3547;
+  margin-bottom: 28px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #edf2f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
+}
+
+.stat-card-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2a3547;
+  line-height: 1.2;
+}
+
+.stat-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #7c8fac;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.stat-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  width: max-content;
+}
+
+.trend-up {
+  color: #13deb9;
+}
+
+.trend-down {
+  color: #fa896b;
+}
+
+.trend-arrow {
+  width: 12px;
+  height: 12px;
+}
+
+.stat-card-right {
+  display: flex;
+  align-items: center;
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ecf2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.stat-card:hover .stat-icon-wrapper {
+  background-color: #e0ebff;
+}

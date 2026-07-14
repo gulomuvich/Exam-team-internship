@@ -1,46 +1,56 @@
 .navbar {
   width: 250px;
-  min-height: 100vh;
-  background: #fff;
-  border-right: 1px solid #e5e7eb;
-  padding: 20px;
-}
-
-.logo {
-  margin-bottom: 30px;
-}
-
-.logo h3 {
-  color: #635bff;
-  font-size: 22px;
-  font-weight: 700;
+  height: 100%;
+  background: #ffffff;
+  border-right: 1px solid #edf2f9;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-list li {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 15px;
+  padding: 12px 16px;
   border-radius: 8px;
   cursor: pointer;
-  color: #555;
-  margin-bottom: 8px;
-  transition: 0.3s;
+  color: #5a6a85;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-list li:hover {
-  background: #f3f4f6;
+  background-color: #f8fafc;
+  color: #5d87ff;
 }
 
 .nav-list li.active {
-  background: #635bff;
-  color: white;
+  background-color: #5d87ff;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(93, 135, 255, 0.25);
+  font-weight: 600;
 }
 
-.nav-list li span {
-  font-size: 18px;
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: stroke 0.2s ease;
+}
+
+.nav-list li.active .nav-icon {
+  stroke: #ffffff;
+}
+
+.nav-text {
+  letter-spacing: -0.2px;
 }

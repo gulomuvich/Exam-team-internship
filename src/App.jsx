@@ -1,22 +1,23 @@
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import { Routes } from "express";
+import Dashboard from "./components/Dashboard/Dashboard";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div style={{ display: "flex" }}>
-    
-        <Header />
-
-      <div className="layout">
+    <div className="app-container">
+      <Header />
+      <div className="main-layout">
         <Navbar />
-        <main className="content">
+        <main className="content-area">
           <Routes>
-          
+            <Route path="/" element={<Dashboard />} />
+            {/* Fallback to Dashboard for undefined routes */}
+            <Route path="*" element={<Dashboard />} />
           </Routes>
         </main>
       </div>
-      
     </div>
   );
 }
