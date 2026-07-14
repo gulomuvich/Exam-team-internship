@@ -13,7 +13,6 @@ function App() {
         <main className="content-area">
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            {/* Fallback to Dashboard for undefined routes */}
             <Route path="*" element={<Dashboard />} />
           </Routes>
         </main>
