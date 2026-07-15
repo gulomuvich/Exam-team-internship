@@ -13,12 +13,12 @@ body {
  display: flex;
  flex-direction: column;
  height: 100%;
- font-family: var(--font-primary);
- font-weight: var(--font-weight);
+
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
- flex-grow: 1;
+ flex-grow: 1;      
 }
 
 .container {
