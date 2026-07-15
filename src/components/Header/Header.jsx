@@ -8,7 +8,6 @@ function Header() {
       <div className="header-left">
         <div className="logo-container">
           <img src={Logo} alt="Modernize Logo" className="logo-img" />
-          <span className="logo-text">Modernize</span>
         </div>
       </div>
       
