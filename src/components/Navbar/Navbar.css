@@ -17,7 +17,6 @@
 
 
 .nav-list Link {
-.nav-item {
 
   display: flex;
   align-items: center;
@@ -35,10 +34,8 @@
 
 .nav-item:hover {
   background-color: #f8fafc;
-<<<<<<< HEAD
-=======
   color: #5d87ff;
->>>>>>> 6d690fb5f03850b8eb3609f3efa65cbe1964c5e5
+
 }
 
 .nav-item:hover .nav-icon {
