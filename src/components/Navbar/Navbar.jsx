@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <nav className="nav-list">
-        <NavLink 
-          to="/" 
+        <NavLink
+          to="/"
           className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}
         >
           <svg className="nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -16,8 +16,8 @@ const Navbar = () => {
           <span className="nav-text">Dashboard</span>
         </NavLink>
 
-        <NavLink 
-          to="/products" 
+        <NavLink
+          to="/products"
           className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}
         >
           <svg className="nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -27,8 +27,8 @@ const Navbar = () => {
           <span className="nav-text">Products</span>
         </NavLink>
 
-        <NavLink 
-          to="/categories" 
+        <NavLink
+          to="/categories"
           className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}
         >
           <svg className="nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
