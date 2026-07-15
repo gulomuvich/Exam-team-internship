@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-.nav-list li {
+.nav-list Link {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -30,7 +30,6 @@
 
 .nav-list li:hover {
   background-color: #f8fafc;
- 
 }
 
 .nav-list li.active {
