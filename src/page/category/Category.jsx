@@ -2,15 +2,19 @@ import { useState } from "react";
 import "./category.css";
 
 function Category() {
+  const [reData, setReData] = useState(JSON.parse(localStorage.getItem("category")) || [])
   const [showModal, setShowModal] = useState(false);
 
   const [categories, setCategories] = useState([]);
 
+  console.log(categories);
+  
+
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
-
   function addCategories() {
+
     const newCategory = {
       id: Date.now(),
       name,
@@ -18,12 +22,15 @@ function Category() {
       item: 0,
     };
 
+    reData.push(newCategory)
+    localStorage.setItem("category", JSON.stringify(reData))
+
     setCategories([...categories, newCategory]);
 
     setName("");
     setImage("");
 
-    setShowModal(false)
+    setShowModal(false);
   }
 
   return (
@@ -37,7 +44,7 @@ function Category() {
       </div>
 
       <div className="cards">
-        {categories.map((item) => (
+        {reData.map((item) => (
           <div className="card" key={item.id}>
             <img src={item.image} alt="" />
 
