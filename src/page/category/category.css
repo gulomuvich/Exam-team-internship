@@ -1,0 +1,149 @@
+.categories {
+  width: 95%;
+  margin: 30px auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top h2 {
+  font-size: 34px;
+  color: #222;
+}
+
+.addBtn {
+  padding: 12px 22px;
+  background: #3563ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #214ce0;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardBody {
+  padding: 22px;
+}
+
+.cardBody h3 {
+  font-size: 28px;
+  color: #1f2235;
+  margin-bottom: 10px;
+}
+
+.cardBody p {
+  font-size: 20px;
+  color: #7d82a6;
+}
+
+/* ===== Modal ===== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBox {
+  width: 550px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modalBox h2 {
+  margin-bottom: 25px;
+}
+
+.modalBox label {
+  display: block;
+  margin: 15px 0 8px;
+}
+
+.modalBox input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 15px;
+  outline: none;
+}
+
+.modalBox input:focus {
+  border-color: #3563ff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cancel {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: #3563ff;
+  cursor: pointer;
+}
+
+.create {
+  padding: 10px 22px;
+  background: #3563ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create:hover {
+  background: #214ce0;
+}
