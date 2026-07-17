@@ -118,14 +118,14 @@ export default function AddProduct() {
                     onChange={productPrice}
                     required
                     placeholder="Enter price"
-                    type="text"
+                    type="text" className="priceInput"
                   />
                   </div>
                     </label>
                   <div>
                     <label>
                     <h4>Product Remainder</h4>
-                      <input
+                      <input className="remainderInput"
                     onChange={productRemainder}
                     required
                     placeholder="Enter Remainder"
@@ -146,7 +146,7 @@ export default function AddProduct() {
               onChange={cateogoryInf}
               name="category"
               type="radio"
-            />{" "}
+            />
             Women
           </h4>
           <h4>
