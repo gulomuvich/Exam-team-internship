@@ -1,0 +1,115 @@
+.productTitle>div>button {
+  background: #1E5EFF;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.productTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  border-collapse: collapse;
+}
+
+.table>thead {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.messageWindow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  border-radius: 8px;
+  left: 46%;
+  background: rgba(0, 0, 0, 0.351);
+  color: white;
+  font-weight: 900;
+  opacity: 0;
+  transform: 0.35s;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+}
+.productDadData{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.productTitleTwo{
+  display: flex;
+  flex-direction: column;
+}
+.productTitleTwo>p{
+  color: grey;
+}
+.productTitleTwo>b{
+  font-size: 19px;
+  font-weight: 500;
+}
+.productImg{
+  width: 52px;
+  margin-left: 10px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.dataMain{
+  padding-top: 2% !important;
+}
+.actionButtons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: end;
+}
+.actionButtons>button{
+  background: none;
+  border: solid rgba(128, 128, 128, 0.343) 2px;
+  border-radius: 5px;
+  font-size: 22px;
+  transition: 0.25s;
+  color: #1E5EFF;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+}
+.actionButtons>button:hover{
+  color: white;
+  transform: scale(1.2);
+  border: 2px solid #1E5EFF;
+  background-color: #1E5EFF;
+  cursor: pointer;
+}
