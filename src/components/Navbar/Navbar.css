@@ -1,3 +1,4 @@
+
 .navbar {
   width: 250px;
   height: 100%;
@@ -30,15 +31,15 @@
 
 .nav-list li:hover {
   background-color: #f8fafc;
- 
+  color: #5d87ff;
 }
 
-.nav-list li.active {
+/* .nav-list>li.active {
   background-color: #5d87ff;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(93, 135, 255, 0.25);
   font-weight: 600;
-}
+} */
 
 .nav-icon {
   width: 20px;
@@ -47,10 +48,10 @@
   transition: stroke 0.2s ease;
 }
 
-.nav-list li.active .nav-icon {
-  stroke: #ffffff;
-}
-
 .nav-text {
   letter-spacing: -0.2px;
+}
+.nav-list>a.active li{
+  background: #1E5EFF;
+  color: white;
 }

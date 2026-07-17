@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./components/Dashboard/Dashboard";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Products from "./page/Products";
+import Products from "./page/Products/Products";
+import AddProduct from "./page/Products/AddProduct";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/addProduct" element={<AddProduct/>}/>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/products" element={<Products/>}/>
             <Route path="*" element={<Dashboard />} />
           </Routes>
         </main>
