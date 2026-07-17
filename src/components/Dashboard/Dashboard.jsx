@@ -27,10 +27,10 @@ return (
        <li className="dosbord-list">
         <div>
           <h2>
-            $10.540
+            1,056
           </h2>
           <p>
-            Total Revenue
+Orders
           </p>
           <mark className="deshbord-mark">22.45% </mark>
         </div>
@@ -39,24 +39,24 @@ return (
        <li className="dosbord-list">
         <div>
           <h2>
-            $10.540
+            48
           </h2>
           <p>
-            Total Revenue
+            Active Sessions
           </p>
-          <mark>22.45% </mark>
+          <mark className="a22-mark">22.45% </mark>
         </div>
         <img src={puple} alt="" />
       </li>
        <li className="dosbord-list">
         <div>
           <h2>
-            $10.540
+            5.420
           </h2>
           <p>
-            Total Revenue
+            Total Sessions
           </p>
-          <mark className="">22.45% </mark>
+          <mark className="a22-mark">22.45% </mark>
         </div>
         <img src={add} alt="" />
       </li>
