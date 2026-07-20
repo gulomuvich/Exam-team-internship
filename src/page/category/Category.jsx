@@ -1,20 +1,22 @@
 import { useState } from "react";
 import "./category.css";
+import { RiDeleteBin6Line, RiEdit2Line } from "react-icons/ri";
+
 
 function Category() {
-  const [reData, setReData] = useState(JSON.parse(localStorage.getItem("category")) || [])
+  const [reData, setReData] = useState(
+    JSON.parse(localStorage.getItem("category")) || [],
+  );
   const [showModal, setShowModal] = useState(false);
 
   const [categories, setCategories] = useState([]);
 
   console.log(categories);
-  
 
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
   function addCategories() {
-
     const newCategory = {
       id: Date.now(),
       name,
@@ -22,8 +24,8 @@ function Category() {
       item: 0,
     };
 
-    reData.push(newCategory)
-    localStorage.setItem("category", JSON.stringify(reData))
+    reData.push(newCategory);
+    localStorage.setItem("category", JSON.stringify(reData));
 
     setCategories([...categories, newCategory]);
 
@@ -40,6 +42,14 @@ function Category() {
 
         <button className="addBtn" onClick={() => setShowModal(true)}>
           + Add Category
+        </button>
+      </div>
+      <div className="actionButtons">
+        <button>
+          <RiDeleteBin6Line />
+        </button>
+        <button>
+          <RiEdit2Line />
         </button>
       </div>
 
